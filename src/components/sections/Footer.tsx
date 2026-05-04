@@ -15,9 +15,8 @@ const Footer = () => {
           </div>
           <div>
             <div className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">Bezoek</div>
-            <div className="text-foreground/80">Parade 38</div>
-            <div className="text-foreground/60">5911 CB Venlo</div>
-            <div className="mt-2 text-foreground/60">Do — Zo · v/a 20:00</div>
+            <div className="text-foreground/80">Parade 38, Venlo</div>
+            <div className="mt-2 text-foreground/60">Actuele tijden via Instagram</div>
           </div>
           <div>
             <div className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">Volg ons</div>
@@ -33,8 +32,8 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-foreground/45 md:flex-row md:items-center">
-          <div>© {new Date().getFullYear()} De Lange Venlo. Alle rechten voorbehouden.</div>
-          <div className="uppercase tracking-widest">Met liefde gebrouwen in Venlo</div>
+          <div>Concept redesign · niet officieel verbonden aan het etablissement</div>
+          <div className="uppercase tracking-widest">Made with love in Venlo · {new Date().getFullYear()}</div>
         </div>
       </div>
     </footer>

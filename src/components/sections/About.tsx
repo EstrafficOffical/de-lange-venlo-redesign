@@ -17,24 +17,24 @@ const About = () => {
 
         <div className="space-y-6 text-lg leading-relaxed text-foreground/80 md:col-span-7 md:col-start-6">
           <p>
-            Midden op de Parade in Venlo vind je <strong className="text-foreground">De Lange</strong> —
-            een bar waar studenten, locals en mensen die net binnen komen lopen elkaar tegen het lijf
-            lopen. Geen dresscode, geen drempel, wel een goede playlist.
+            Dit is een <strong className="text-foreground">concept redesign</strong> voor De Lange
+            op de Parade in Venlo — een bar waar studenten, locals en passanten elkaar tegen het
+            lijf lopen. Geen dresscode, geen drempel, wel een goede playlist.
           </p>
           <p className="text-foreground/65">
-            Of je nu komt voor een rustig biertje op donderdag, een cocktail op vrijdag of de
-            knalfeesten in het weekend: bij ons zit je goed. Doordeweeks gezellig, in het weekend
-            tot diep in de nacht.
+            Deze pagina laat zien hoe de online aanwezigheid eruit zou kunnen zien: moderner,
+            sfeervoller en handiger voor bezoekers. De teksten en beelden zijn een voorstel —
+            geen officiële communicatie van het etablissement.
           </p>
 
           <div className="grid grid-cols-3 gap-4 pt-8">
             {[
-              { k: "20+", v: "Jaar in Venlo" },
-              { k: "4", v: "Avonden p/w open" },
+              { k: "DO–ZO", v: "Nightlife focus" },
+              { k: "Parade", v: "Hart van Venlo" },
               { k: "∞", v: "Goede nachten" },
             ].map((s) => (
               <div key={s.v} className="border-l-2 border-neon-yellow pl-4" style={{ borderColor: "hsl(var(--neon-yellow))" }}>
-                <div className="font-display text-4xl text-neon-yellow md:text-5xl">{s.k}</div>
+                <div className="font-display text-3xl text-neon-yellow md:text-4xl">{s.k}</div>
                 <div className="mt-1 text-xs uppercase tracking-widest text-foreground/60">{s.v}</div>
               </div>
             ))}

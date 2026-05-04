@@ -1,14 +1,4 @@
-import { Clock, MapPin, Phone, Instagram, Facebook } from "lucide-react";
-
-const hours = [
-  { day: "Maandag", time: "Gesloten" },
-  { day: "Dinsdag", time: "Gesloten" },
-  { day: "Woensdag", time: "Gesloten" },
-  { day: "Donderdag", time: "20:00 — 03:00", highlight: true },
-  { day: "Vrijdag", time: "20:00 — 04:00", highlight: true },
-  { day: "Zaterdag", time: "20:00 — 04:00", highlight: true },
-  { day: "Zondag", time: "20:00 — 02:00", highlight: true },
-];
+import { Clock, MapPin, Instagram, Facebook, Mail } from "lucide-react";
 
 const Info = () => {
   return (
@@ -30,21 +20,35 @@ const Info = () => {
               <Clock className="h-5 w-5 text-neon-yellow" />
               <h3 className="font-display text-2xl tracking-wider">Openingstijden</h3>
             </div>
-            <ul className="space-y-3">
-              {hours.map((h) => (
-                <li
-                  key={h.day}
-                  className={`flex items-center justify-between border-b border-border/60 pb-3 text-sm ${
-                    h.highlight ? "text-foreground" : "text-foreground/40"
-                  }`}
-                >
-                  <span className="uppercase tracking-widest">{h.day}</span>
-                  <span className={`font-mono ${h.highlight ? "text-neon-yellow" : ""}`}>
-                    {h.time}
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <p className="text-sm leading-relaxed text-foreground/75">
+              De openingstijden wisselen per week en per evenement.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-foreground/65">
+              Bekijk de actuele tijden via:
+            </p>
+            <div className="mt-5 flex flex-col gap-3">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-between rounded-full border border-border px-4 py-3 text-sm uppercase tracking-widest transition hover:border-neon-pink hover:text-neon-pink"
+              >
+                <span className="flex items-center gap-2"><Instagram className="h-4 w-4" /> Instagram</span>
+                <span className="text-foreground/40">→</span>
+              </a>
+              <a
+                href="https://www.google.com/search?q=De+Lange+Venlo"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-between rounded-full border border-border px-4 py-3 text-sm uppercase tracking-widest transition hover:border-neon-yellow hover:text-neon-yellow"
+              >
+                <span>Google</span>
+                <span className="text-foreground/40">→</span>
+              </a>
+            </div>
+            <p className="mt-6 text-[11px] uppercase tracking-widest text-foreground/40">
+              * Concept — geen officiële tijden
+            </p>
           </div>
 
           {/* Map */}
@@ -65,13 +69,13 @@ const Info = () => {
             <MapPin className="mb-3 h-5 w-5 text-neon-pink" />
             <div className="text-xs uppercase tracking-widest text-foreground/50">Adres</div>
             <div className="mt-1 font-display text-2xl tracking-wider">Parade 38</div>
-            <div className="text-foreground/70">5911 CB Venlo</div>
+            <div className="text-foreground/70">Venlo</div>
           </div>
           <div className="rounded-2xl border border-border bg-gradient-card p-6">
-            <Phone className="mb-3 h-5 w-5 text-neon-blue" />
-            <div className="text-xs uppercase tracking-widest text-foreground/50">Bellen of appen</div>
-            <div className="mt-1 font-display text-2xl tracking-wider">+31 77 000 0000</div>
-            <div className="text-foreground/70">info@delangevenlo.nl</div>
+            <Mail className="mb-3 h-5 w-5 text-neon-blue" />
+            <div className="text-xs uppercase tracking-widest text-foreground/50">Mail</div>
+            <div className="mt-1 font-display text-xl tracking-wider break-all">info@delangevenlo.nl</div>
+            <div className="text-[11px] uppercase tracking-widest text-foreground/40 mt-1">* Voorbeeld-adres</div>
           </div>
           <div className="rounded-2xl border border-border bg-gradient-card p-6">
             <div className="mb-3 flex gap-2">
@@ -86,7 +90,7 @@ const Info = () => {
                 rel="noreferrer"
                 className="rounded-full border border-border px-4 py-2 text-sm transition hover:border-neon-pink hover:text-neon-pink"
               >
-                @delangevenlo
+                Instagram
               </a>
               <a
                 href="https://facebook.com"
