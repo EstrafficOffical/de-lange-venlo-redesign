@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+// Concept agenda — events kunnen later worden aangepast.
 
 const events = [
   {
