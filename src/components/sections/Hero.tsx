@@ -74,9 +74,8 @@ const Hero = () => {
         </div>
 
         <div className="mt-16 flex flex-wrap gap-x-10 gap-y-4 text-xs font-medium uppercase tracking-[0.25em] text-foreground/50">
-          <span>Open · Do — Zo</span>
           <span>Parade 38, Venlo</span>
-          <span>Sinds altijd</span>
+          <span>Actuele tijden via Instagram</span>
         </div>
       </div>
 
