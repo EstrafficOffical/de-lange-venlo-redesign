@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, Facebook, Mail } from "lucide-react";
+import { Instagram, Facebook, Mail, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -12,28 +12,25 @@ const Contact = () => {
             // Contact
           </span>
           <h2 className="mt-3 font-display text-5xl leading-none md:text-7xl">
-            Zeg even<br />
-            <span className="text-neon-yellow text-glow-yellow">hallo.</span>
+            Contact &amp;<br />
+            <span className="text-neon-yellow text-glow-yellow">socials.</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-lg text-foreground/65">
-            De snelste weg loopt via social media. Een DM op Instagram werkt meestal het beste.
-          </p>
-          <p className="mx-auto mt-3 max-w-lg text-[11px] uppercase tracking-widest text-foreground/40">
-            * Dit is een concept redesign — links zijn voorbeelden
+          <p className="mx-auto mt-5 max-w-xl text-foreground/70">
+            Voor vragen, reserveringen of actuele informatie kun je De Lange Venlo bereiken
+            via social media of e-mail.
           </p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <a
             href="https://instagram.com"
             target="_blank"
             rel="noreferrer"
-            className="group rounded-2xl border border-border bg-gradient-card p-8 transition hover:border-neon-pink"
+            className="group rounded-2xl border border-border bg-gradient-card p-6 transition hover:border-neon-pink"
           >
-            <Instagram className="h-7 w-7 text-neon-pink" />
-            <div className="mt-6 font-display text-2xl tracking-wider">Instagram</div>
-            <div className="mt-1 text-sm text-foreground/60">Stuur een DM</div>
-            <div className="mt-6 text-xs uppercase tracking-widest text-foreground/50 transition group-hover:text-neon-pink">
+            <Instagram className="h-6 w-6 text-neon-pink" />
+            <div className="mt-5 font-display text-xl tracking-wider">Instagram</div>
+            <div className="mt-4 text-xs uppercase tracking-widest text-foreground/50 transition group-hover:text-neon-pink">
               Open →
             </div>
           </a>
@@ -42,35 +39,45 @@ const Contact = () => {
             href="https://facebook.com"
             target="_blank"
             rel="noreferrer"
-            className="group rounded-2xl border border-border bg-gradient-card p-8 transition hover:border-neon-blue"
+            className="group rounded-2xl border border-border bg-gradient-card p-6 transition hover:border-neon-blue"
           >
-            <Facebook className="h-7 w-7 text-neon-blue" />
-            <div className="mt-6 font-display text-2xl tracking-wider">Facebook</div>
-            <div className="mt-1 text-sm text-foreground/60">Stuur een bericht</div>
-            <div className="mt-6 text-xs uppercase tracking-widest text-foreground/50 transition group-hover:text-neon-blue">
+            <Facebook className="h-6 w-6 text-neon-blue" />
+            <div className="mt-5 font-display text-xl tracking-wider">Facebook</div>
+            <div className="mt-4 text-xs uppercase tracking-widest text-foreground/50 transition group-hover:text-neon-blue">
               Open →
             </div>
           </a>
 
           <a
-            href="mailto:info@delangevenlo.nl"
-            className="group rounded-2xl border border-border bg-gradient-card p-8 transition hover:border-neon-yellow"
+            href="mailto:"
+            className="group rounded-2xl border border-border bg-gradient-card p-6 transition hover:border-neon-yellow"
           >
-            <Mail className="h-7 w-7 text-neon-yellow" />
-            <div className="mt-6 font-display text-2xl tracking-wider">Mail</div>
-            <div className="mt-1 text-sm text-foreground/60 break-all">info@delangevenlo.nl</div>
-            <div className="mt-6 text-xs uppercase tracking-widest text-foreground/50 transition group-hover:text-neon-yellow">
-              Open →
+            <Mail className="h-6 w-6 text-neon-yellow" />
+            <div className="mt-5 font-display text-xl tracking-wider">E-mail</div>
+            <div className="mt-4 text-xs uppercase tracking-widest text-foreground/50 transition group-hover:text-neon-yellow">
+              Stuur bericht →
+            </div>
+          </a>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Parade+38+Venlo"
+            target="_blank"
+            rel="noreferrer"
+            className="group rounded-2xl border border-border bg-gradient-card p-6 transition hover:border-neon-pink"
+          >
+            <MapPin className="h-6 w-6 text-neon-pink" />
+            <div className="mt-5 font-display text-xl tracking-wider">Route openen</div>
+            <div className="mt-4 text-xs uppercase tracking-widest text-foreground/50 transition group-hover:text-neon-pink">
+              Maps →
             </div>
           </a>
         </div>
 
         <div className="mt-10 text-center">
-          <Button asChild variant="outlineNeon" size="lg" className="uppercase tracking-widest">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              Volg @delangevenlo →
-            </a>
-          </Button>
+          <div className="font-display text-2xl tracking-wider">Parade 38, Venlo</div>
+          <p className="mt-4 text-[11px] uppercase tracking-widest text-foreground/40">
+            Concept redesign – contactgegevens kunnen later worden aangepast.
+          </p>
         </div>
       </div>
     </section>

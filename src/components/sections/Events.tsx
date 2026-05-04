@@ -1,37 +1,37 @@
-import { Button } from "@/components/ui/button";
+// Concept agenda — events kunnen later worden aangepast.
 
 const events = [
   {
     name: "Student Night",
-    date: "Elke donderdag",
+    date: "Voorbeeld",
     day: "DO",
-    desc: "Korting op bier, shots en gemixte drankjes. Studentenkaart? Studentenkaart.",
+    desc: "Concept voor een doordeweekse studentenavond met aanbiedingen op drankjes.",
     accent: "yellow" as const,
-    tag: "Wekelijks",
+    tag: "Concept",
   },
   {
     name: "Weekend Party",
-    date: "Vrijdag & Zaterdag",
+    date: "Voorbeeld",
     day: "VR",
-    desc: "Het hele weekend muziek tot in de kleine uurtjes. De binnenkomer van Venlo.",
+    desc: "Ideaal voor een lange weekendavond met muziek tot in de kleine uurtjes.",
     accent: "pink" as const,
-    tag: "Hot",
+    tag: "Concept",
   },
   {
     name: "DJ Night",
-    date: "Zaterdag 22:00",
+    date: "Voorbeeld",
     day: "ZA",
-    desc: "Resident DJ's draaien de beats die je tot 04:00 op de dansvloer houden.",
+    desc: "Denk aan een avond met DJ-sets en een volle dansvloer.",
     accent: "blue" as const,
-    tag: "Live",
+    tag: "Concept",
   },
   {
     name: "Carnaval Special",
-    date: "Carnaval 2026",
+    date: "Voorbeeld",
     day: "★",
-    desc: "Drie dagen non-stop feest. Pak je pak, wij doen de rest. Alaaf!",
+    desc: "Concept voor een carnavalsweekend in hartje Venlo. Alaaf!",
     accent: "yellow" as const,
-    tag: "Special",
+    tag: "Concept",
   },
 ];
 
@@ -55,7 +55,8 @@ const Events = () => {
             </h2>
           </div>
           <p className="max-w-sm text-foreground/65">
-            Van rustige donderdagavonden tot doorhalen tot zonsopgang. Hier komt de week tot leven.
+            Voorbeeldagenda – events kunnen later worden aangepast. Denk aan vaste avonden,
+            DJ-sets en speciale weekenden.
           </p>
         </div>
 
@@ -91,9 +92,9 @@ const Events = () => {
                     </div>
                     <h3 className="font-display text-3xl leading-none md:text-4xl">{e.name}</h3>
                     <p className="mt-3 text-sm text-foreground/70">{e.desc}</p>
-                    <button className={`mt-5 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest ${a.text} transition group-hover:gap-3`}>
-                      Meer info <span>→</span>
-                    </button>
+                    <div className={`mt-5 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest ${a.text}`}>
+                      Voorbeeld concept
+                    </div>
                   </div>
                 </div>
               </article>
@@ -101,10 +102,8 @@ const Events = () => {
           })}
         </div>
 
-        <div className="mt-12 text-center">
-          <Button variant="outlineNeon" size="lg" className="uppercase tracking-widest">
-            Volledige agenda
-          </Button>
+        <div className="mt-12 text-center text-[11px] uppercase tracking-widest text-foreground/40">
+          Voorbeeldagenda – events kunnen later worden aangepast.
         </div>
       </div>
     </section>

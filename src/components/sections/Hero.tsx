@@ -59,9 +59,9 @@ const Hero = () => {
         </h1>
 
         <p className="mt-8 max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg">
-          Drinks die smaken naar vrijdagavond, muziek die je wakker schudt en vrienden die je hier
-          gewoon tegenkomt. Welkom bij <span className="text-foreground">De Lange</span> — het hart
-          van de Venlose nightlife.
+          Concept voor <span className="text-foreground">De Lange Venlo</span> — een plek voor
+          sfeer, muziek en avonden met vrienden in hartje Venlo. Denk aan een vrijdagavond die
+          niet stopt bij middernacht.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -69,7 +69,7 @@ const Hero = () => {
             <a href="#agenda">Bekijk agenda →</a>
           </Button>
           <Button asChild size="lg" variant="outlineNeon" className="font-semibold uppercase tracking-widest">
-            <a href="#contact">Neem contact op</a>
+            <a href="#contact">Contact &amp; socials</a>
           </Button>
         </div>
 
