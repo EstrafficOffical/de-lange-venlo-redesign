@@ -17,21 +17,21 @@ const About = () => {
 
         <div className="space-y-6 text-lg leading-relaxed text-foreground/80 md:col-span-7 md:col-start-6">
           <p>
-            Dit is een <strong className="text-foreground">concept redesign</strong> voor De Lange
-            op de Parade in Venlo — een bar waar studenten, locals en passanten elkaar tegen het
-            lijf lopen. Geen dresscode, geen drempel, wel een goede playlist.
+            Een plek voor sfeer, muziek en avonden met vrienden in hartje Venlo. Ideaal voor
+            studenten, locals en iedereen die toevallig langsloopt op de Parade.
           </p>
           <p className="text-foreground/65">
-            Deze pagina laat zien hoe de online aanwezigheid eruit zou kunnen zien: moderner,
-            sfeervoller en handiger voor bezoekers. De teksten en beelden zijn een voorstel —
-            geen officiële communicatie van het etablissement.
+            Deze pagina is een <strong className="text-foreground">concept redesign</strong> —
+            een voorstel hoe de online aanwezigheid van De Lange eruit zou kunnen zien:
+            moderner, sfeervoller en handiger voor bezoekers. Teksten en beelden zijn
+            voorbeelden en geen officiële communicatie.
           </p>
 
           <div className="grid grid-cols-3 gap-4 pt-8">
             {[
-              { k: "DO–ZO", v: "Nightlife focus" },
-              { k: "Parade", v: "Hart van Venlo" },
-              { k: "∞", v: "Goede nachten" },
+              { k: "Nightlife", v: "Sfeer & muziek" },
+              { k: "Parade", v: "Centraal op de Parade" },
+              { k: "Venlo", v: "Hartje centrum" },
             ].map((s) => (
               <div key={s.v} className="border-l-2 border-neon-yellow pl-4" style={{ borderColor: "hsl(var(--neon-yellow))" }}>
                 <div className="font-display text-3xl text-neon-yellow md:text-4xl">{s.k}</div>

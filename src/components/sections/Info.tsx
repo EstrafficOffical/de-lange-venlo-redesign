@@ -1,4 +1,4 @@
-import { Clock, MapPin, Instagram, Facebook, Mail } from "lucide-react";
+import { Clock, MapPin, Instagram, Facebook } from "lucide-react";
 
 const Info = () => {
   return (
@@ -21,12 +21,12 @@ const Info = () => {
               <h3 className="font-display text-2xl tracking-wider">Openingstijden</h3>
             </div>
             <p className="text-sm leading-relaxed text-foreground/75">
-              De openingstijden wisselen per week en per evenement.
+              Actuele openingstijden en evenementen vind je via Instagram, Facebook of Google.
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-foreground/65">
-              Bekijk de actuele tijden via:
+            <p className="mt-3 text-sm leading-relaxed text-foreground/55">
+              Voor speciale avonden, feestdagen en events kunnen tijden afwijken.
             </p>
-            <div className="mt-5 flex flex-col gap-3">
+            <div className="mt-6 flex flex-col gap-3">
               <a
                 href="https://instagram.com"
                 target="_blank"
@@ -34,6 +34,15 @@ const Info = () => {
                 className="inline-flex items-center justify-between rounded-full border border-border px-4 py-3 text-sm uppercase tracking-widest transition hover:border-neon-pink hover:text-neon-pink"
               >
                 <span className="flex items-center gap-2"><Instagram className="h-4 w-4" /> Instagram</span>
+                <span className="text-foreground/40">→</span>
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-between rounded-full border border-border px-4 py-3 text-sm uppercase tracking-widest transition hover:border-neon-blue hover:text-neon-blue"
+              >
+                <span className="flex items-center gap-2"><Facebook className="h-4 w-4" /> Facebook</span>
                 <span className="text-foreground/40">→</span>
               </a>
               <a
@@ -46,9 +55,6 @@ const Info = () => {
                 <span className="text-foreground/40">→</span>
               </a>
             </div>
-            <p className="mt-6 text-[11px] uppercase tracking-widest text-foreground/40">
-              * Concept — geen officiële tijden
-            </p>
           </div>
 
           {/* Map */}
@@ -63,19 +69,20 @@ const Info = () => {
           </div>
         </div>
 
-        {/* Contact details row */}
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        {/* Address row */}
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-border bg-gradient-card p-6">
             <MapPin className="mb-3 h-5 w-5 text-neon-pink" />
             <div className="text-xs uppercase tracking-widest text-foreground/50">Adres</div>
-            <div className="mt-1 font-display text-2xl tracking-wider">Parade 38</div>
-            <div className="text-foreground/70">Venlo</div>
-          </div>
-          <div className="rounded-2xl border border-border bg-gradient-card p-6">
-            <Mail className="mb-3 h-5 w-5 text-neon-blue" />
-            <div className="text-xs uppercase tracking-widest text-foreground/50">Mail</div>
-            <div className="mt-1 font-display text-xl tracking-wider break-all">info@delangevenlo.nl</div>
-            <div className="text-[11px] uppercase tracking-widest text-foreground/40 mt-1">* Voorbeeld-adres</div>
+            <div className="mt-1 font-display text-2xl tracking-wider">Parade 38, Venlo</div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Parade+38+Venlo"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-block text-xs uppercase tracking-widest text-neon-pink hover:text-neon-yellow"
+            >
+              Route openen →
+            </a>
           </div>
           <div className="rounded-2xl border border-border bg-gradient-card p-6">
             <div className="mb-3 flex gap-2">
@@ -83,7 +90,7 @@ const Info = () => {
               <Facebook className="h-5 w-5 text-neon-blue" />
             </div>
             <div className="text-xs uppercase tracking-widest text-foreground/50">Social</div>
-            <div className="mt-1 flex flex-wrap gap-2">
+            <div className="mt-2 flex flex-wrap gap-2">
               <a
                 href="https://instagram.com"
                 target="_blank"

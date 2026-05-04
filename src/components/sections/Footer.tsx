@@ -10,8 +10,12 @@ const Footer = () => {
               DE LANGE<span className="text-foreground">.</span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-foreground/60">
-              Bar · Café · Nightlife in het hart van Venlo. Wrong place, wrong time, be there.
+              De Lange Venlo – Concept redesign. Sfeer, muziek en avonden met vrienden in
+              hartje Venlo.
             </p>
+            <div className="mt-4 inline-block rounded-full border border-neon-pink/40 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-neon-pink">
+              ● Concept redesign
+            </div>
           </div>
           <div>
             <div className="mb-4 text-xs font-semibold uppercase tracking-widest text-foreground/50">Bezoek</div>
@@ -32,8 +36,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-foreground/45 md:flex-row md:items-center">
-          <div>Concept redesign · niet officieel verbonden aan het etablissement</div>
-          <div className="uppercase tracking-widest">Made with love in Venlo · {new Date().getFullYear()}</div>
+          <div>
+            Deze website is een vrijblijvend conceptvoorstel en geen officiële website.
+          </div>
+          <div className="uppercase tracking-widest">Concept · {new Date().getFullYear()}</div>
         </div>
       </div>
     </footer>
