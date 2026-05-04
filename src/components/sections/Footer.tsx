@@ -32,8 +32,8 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-foreground/45 md:flex-row md:items-center">
-          <div>© {new Date().getFullYear()} De Lange Venlo. Alle rechten voorbehouden.</div>
-          <div className="uppercase tracking-widest">Met liefde gebrouwen in Venlo</div>
+          <div>Concept redesign · niet officieel verbonden aan het etablissement</div>
+          <div className="uppercase tracking-widest">Made with love in Venlo · {new Date().getFullYear()}</div>
         </div>
       </div>
     </footer>
