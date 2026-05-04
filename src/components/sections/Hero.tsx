@@ -17,6 +17,11 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
       </div>
 
+      {/* Concept badge */}
+      <div className="absolute left-1/2 top-4 z-30 -translate-x-1/2 rounded-full border border-neon-pink/40 bg-background/70 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-neon-pink backdrop-blur md:left-auto md:right-6 md:translate-x-0">
+        ● Concept redesign — niet officieel
+      </div>
+
       {/* Nav */}
       <nav className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:py-8">
         <a href="#" className="font-display text-2xl tracking-wider text-neon-yellow text-glow-yellow md:text-3xl">
